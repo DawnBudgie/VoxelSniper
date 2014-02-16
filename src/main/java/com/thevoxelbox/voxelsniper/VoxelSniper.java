@@ -219,29 +219,29 @@ public class VoxelSniper extends JavaPlugin
         Brushes.registerSniperBrush(DrainBrush.class, Brushes.BrushAvailability.ALL, "drain");
         Brushes.registerSniperBrush(EllipseBrush.class, Brushes.BrushAvailability.ALL, "el", "ellipse");
         Brushes.registerSniperBrush(EllipsoidBrush.class, Brushes.BrushAvailability.ALL, "elo", "ellipsoid");
-        Brushes.registerSniperBrush(EntityBrush.class, Brushes.BrushAvailability.SNIPER_ONLY, "en", "entity");
+        Brushes.registerSniperBrush(EntityBrush.class, Brushes.BrushAvailability.ALL, "en", "entity");
         Brushes.registerSniperBrush(EntityRemovalBrush.class, Brushes.BrushAvailability.ALL, "er", "entityremoval");
         Brushes.registerSniperBrush(EraserBrush.class, Brushes.BrushAvailability.ALL, "erase", "eraser");
         Brushes.registerSniperBrush(ErodeBrush.class, Brushes.BrushAvailability.ALL, "e", "erode");
         Brushes.registerSniperBrush(ExtrudeBrush.class, Brushes.BrushAvailability.ALL, "ex", "extrude");
-        Brushes.registerSniperBrush(FillDownBrush.class, Brushes.BrushAvailability.SNIPER_ONLY, "fd", "filldown");
+        Brushes.registerSniperBrush(FillDownBrush.class, Brushes.BrushAvailability.ALL, "fd", "filldown");
         Brushes.registerSniperBrush(FlatOceanBrush.class, Brushes.BrushAvailability.ALL, "fo", "flatocean");
         Brushes.registerSniperBrush(GenerateTreeBrush.class, Brushes.BrushAvailability.ALL, "gt", "generatetree");
         Brushes.registerSniperBrush(HeatRayBrush.class, Brushes.BrushAvailability.SNIPER_ONLY, "hr", "heatray");
         Brushes.registerSniperBrush(JaggedLineBrush.class, Brushes.BrushAvailability.ALL, "j", "jagged");
-        Brushes.registerSniperBrush(JockeyBrush.class, Brushes.BrushAvailability.SNIPER_ONLY, "jockey");
+        Brushes.registerSniperBrush(JockeyBrush.class, Brushes.BrushAvailability.ALL, "jockey");
         Brushes.registerSniperBrush(LightningBrush.class, Brushes.BrushAvailability.ALL, "light", "lightning");
         Brushes.registerSniperBrush(LineBrush.class, Brushes.BrushAvailability.ALL, "l", "line");
         Brushes.registerSniperBrush(MoveBrush.class, Brushes.BrushAvailability.SNIPER_ONLY, "mv", "move");
         Brushes.registerSniperBrush(OceanBrush.class, Brushes.BrushAvailability.SNIPER_ONLY, "o", "ocean");
         Brushes.registerSniperBrush(OverlayBrush.class, Brushes.BrushAvailability.ALL, "over", "overlay");
         Brushes.registerSniperBrush(PaintingBrush.class, Brushes.BrushAvailability.ALL, "paint", "painting");
-        Brushes.registerSniperBrush(PullBrush.class, Brushes.BrushAvailability.SNIPER_ONLY, "pull");
+        Brushes.registerSniperBrush(PullBrush.class, Brushes.BrushAvailability.ALL, "pull");
         Brushes.registerSniperBrush(PunishBrush.class, Brushes.BrushAvailability.SNIPER_ONLY, "p", "punish");
         Brushes.registerSniperBrush(RandomErodeBrush.class, Brushes.BrushAvailability.ALL, "re", "randomerode");
         Brushes.registerSniperBrush(RegenerateChunkBrush.class, Brushes.BrushAvailability.ALL, "gc", "generatechunk");
         Brushes.registerSniperBrush(RingBrush.class, Brushes.BrushAvailability.ALL, "ri", "ring");
-        Brushes.registerSniperBrush(Rot2DBrush.class, Brushes.BrushAvailability.SNIPER_ONLY, "rot2", "rotation2d");
+        Brushes.registerSniperBrush(Rot2DBrush.class, Brushes.BrushAvailability.ALL, "rot2", "rotation2d");
         Brushes.registerSniperBrush(Rot2DvertBrush.class, Brushes.BrushAvailability.ALL, "rot2v", "rotation2dvertical");
         Brushes.registerSniperBrush(Rot3DBrush.class, Brushes.BrushAvailability.SNIPER_ONLY, "rot3", "rotation3d");
         Brushes.registerSniperBrush(RulerBrush.class, Brushes.BrushAvailability.ALL, "r", "ruler");
@@ -284,8 +284,8 @@ public class VoxelSniper extends JavaPlugin
         @XmlElementWrapper(name = "LiteSniperBannedIDs", required = false)
         @XmlElement(name = "id", type = Integer.class)
         List<Integer> litesniperRestrictedItems = new ArrayList<Integer>();
-        @XmlElement(name = "MaxLiteBrushSize", required = true, defaultValue = "5")
-        int liteSniperMaxBrushSize = 12;
+        @XmlElement(name = "MaxLiteBrushSize", required = true, defaultValue = "15")
+        int liteSniperMaxBrushSize = 15;
         @XmlElement(name = "SniperUndoCache", required = true, defaultValue = "20")
         int undoCacheSize = 20;
     }
