@@ -203,8 +203,8 @@ public class VoxelSniper extends JavaPlugin
         Brushes.registerSniperBrush(BlendVoxelBrush.class, Brushes.BrushAvailability.ALL, "bv", "blendvoxel");
         Brushes.registerSniperBrush(BlendVoxelDiscBrush.class, Brushes.BrushAvailability.ALL, "bvd", "blendvoxeldisc");
         Brushes.registerSniperBrush(BlobBrush.class, Brushes.BrushAvailability.ALL, "blob", "splatblob");
-        Brushes.registerSniperBrush(BlockResetBrush.class, Brushes.BrushAvailability.ALL, "brb", "blockresetbrush");
-        Brushes.registerSniperBrush(BlockResetSurfaceBrush.class, Brushes.BrushAvailability.ALL, "brbs", "blockresetbrushsurface");
+        Brushes.registerSniperBrush(BlockResetBrush.class, Brushes.BrushAvailability.SNIPER_ONLY, "brb", "blockresetbrush");
+        Brushes.registerSniperBrush(BlockResetSurfaceBrush.class, Brushes.BrushAvailability.SNIPER_ONLY, "brbs", "blockresetbrushsurface");
         Brushes.registerSniperBrush(CanyonBrush.class, Brushes.BrushAvailability.SNIPER_ONLY, "ca", "canyon");
         Brushes.registerSniperBrush(CanyonSelectionBrush.class, Brushes.BrushAvailability.SNIPER_ONLY, "cas", "canyonselection");
         Brushes.registerSniperBrush(CheckerVoxelDiscBrush.class, Brushes.BrushAvailability.ALL, "cvd", "checkervoxeldisc");
@@ -261,8 +261,8 @@ public class VoxelSniper extends JavaPlugin
         Brushes.registerSniperBrush(SplatterVoxelBrush.class, Brushes.BrushAvailability.ALL, "sv", "splattervoxel");
         Brushes.registerSniperBrush(SplatterDiscBrush.class, Brushes.BrushAvailability.ALL, "svd", "splatvoxeldisc");
         Brushes.registerSniperBrush(SplineBrush.class, Brushes.BrushAvailability.ALL, "sp", "spline");
-        Brushes.registerSniperBrush(StencilBrush.class, Brushes.BrushAvailability.ALL, "st", "stencil");
-        Brushes.registerSniperBrush(StencilListBrush.class, Brushes.BrushAvailability.ALL, "sl", "stencillist");
+        Brushes.registerSniperBrush(StencilBrush.class, Brushes.BrushAvailability.SNIPER_ONLY, "st", "stencil");
+        Brushes.registerSniperBrush(StencilListBrush.class, Brushes.BrushAvailability.SNIPER_ONLY, "sl", "stencillist");
         Brushes.registerSniperBrush(ThreePointCircleBrush.class, Brushes.BrushAvailability.ALL, "tpc", "threepointcircle");
         Brushes.registerSniperBrush(TreeSnipeBrush.class, Brushes.BrushAvailability.ALL, "t", "tree", "treesnipe");
         Brushes.registerSniperBrush(TriangleBrush.class, Brushes.BrushAvailability.ALL, "tri", "triangle");
@@ -286,7 +286,7 @@ public class VoxelSniper extends JavaPlugin
         List<Integer> litesniperRestrictedItems = new ArrayList<Integer>();
         @XmlElement(name = "MaxLiteBrushSize", required = true, defaultValue = "15")
         int liteSniperMaxBrushSize = 15;
-        @XmlElement(name = "SniperUndoCache", required = true, defaultValue = "20")
-        int undoCacheSize = 20;
+        @XmlElement(name = "SniperUndoCache", required = true, defaultValue = "30")
+        int undoCacheSize = 30;
     }
 }
